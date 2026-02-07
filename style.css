@@ -1,0 +1,97 @@
+html {
+    font-size: 16px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
+body{
+    height:100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0.9rem 0.4rem 0.2rem;
+    align-items: center;
+    box-shadow: 0px -2px 5px 2px hsl(0,0%,90%);
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.title>img{
+    width: auto;
+    height: 3rem;
+    margin:0.2rem;
+}
+.title-name{
+    font-size: 1.3rem;
+    display:inline;
+}
+nav{
+    display: flex;
+    gap:0.5rem;
+}
+nav>a{
+    text-decoration: none;
+    color:hsl(0,0%,10%);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.hero{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    /*border-bottom:0.3px solid hsl(0,0%,90%);*/
+}
+.slogan{
+    width: 15rem;
+    margin: 2rem;
+}
+.cta{
+    padding: 0.5rem 1rem;
+    border-radius:0.4rem;
+    background-color: hsla(0, 0%, 10%, 1);
+    color:hsl(0,0%,95%);
+    font-weight: 500;
+    border:none;
+    margin: 1.5rem 0 3rem 0;
+}
+.features{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    margin-bottom:5rem;
+}
+.tile{
+    border-radius: 1rem;
+    padding:1rem 0.9rem;
+    width:13rem;
+    height:11.5rem;
+    box-shadow: 0px 0px 4px 1px hsl(0,0%,95%);
+}
+.tile-h{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.tile-h>h3{
+    font-size: 1rem;
+}
+.tile>p{
+    font-size: 0.8rem;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    padding:0.2rem;
+}
+footer>p{
+    font-size: 0.5rem;
+}
