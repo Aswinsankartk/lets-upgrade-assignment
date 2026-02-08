@@ -54,6 +54,7 @@ nav>a{
 }
 .slogan{
     width: 15rem;
+    max-width: 50%;
     margin: 2rem;
     color: var(--text-dark);
 }
