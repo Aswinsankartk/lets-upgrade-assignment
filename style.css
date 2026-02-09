@@ -6,6 +6,7 @@ html {
     --foreground: hsla(0, 0%, 10%, 1);
     --text-dark: hsl(0,0%,0%);
     --shadow: hsl(0,0%,90%);
+    --body-bg: hsl(0,0%,98%);
 }
 *{
     margin:0;
@@ -15,13 +16,14 @@ html {
     transition: all 0.2s ease-in-out;
 }
 body{
-    height:100vh;
-    background-color: var(--background);
+    height: 100vh;
+    background-color: var(--body-bg);
 }
 header{
     display: flex;
     justify-content: space-between;
     padding: 0.8rem 1rem;
+    background-color: var(--background);
     align-items: center;
     box-shadow: 0px -2px 5px 2px var(--shadow);
 }
@@ -53,9 +55,11 @@ nav>a{
     padding: 2rem 0;
 }
 .slogan{
-    width: 15rem;
-    margin: 2rem;
+    width: 30vw;
+    max-width: 400px;
+    margin: 1rem;
     color: var(--text-dark);
+    padding: 0 0.5rem;
 }
 .cta{
     padding: 0.7rem 1.1rem;
@@ -75,6 +79,7 @@ nav>a{
     margin-bottom:5rem;
 }
 .tile{
+    background-color: var(--background);
     border-radius: 1rem;
     padding:1rem 0.9rem;
     width:13rem;
@@ -123,9 +128,21 @@ a:active{
     scale: 1.05;
     cursor: pointer;
 }
+@media (min-width: 400px){
+    html{
+        font-size: 14px;
+    }
+    .slogan{
+        width: 16rem;
+    }
+}
 @media (min-width: 600px){
     html{
         font-size: 16px;
+    }
+    .slogan{
+        width: 15rem;
+        padding: 0;
     }
 }
 @media (min-width: 768px){
